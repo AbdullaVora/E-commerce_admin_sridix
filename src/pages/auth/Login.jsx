@@ -3,6 +3,8 @@ import { FaUser, FaLock } from "react-icons/fa";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 import login_image from "/images/login-screen-image.jpeg";
 import login_logo from "/images/logo.png";
+import { Link } from 'react-router-dom';
+
 
 export default function Login() {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -56,9 +58,9 @@ export default function Login() {
           </div>
 
           {/* Sign In Button */}
-          <button className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">
+          <Link to="/dashboard"><button className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">
             Sign In
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
