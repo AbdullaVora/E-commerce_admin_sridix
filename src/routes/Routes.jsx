@@ -18,7 +18,7 @@ import Addproduct from "../pages/Dashboard/Product/Addproduct";
 
 export const privateRoutes = [
   {
-    path: "/",
+    path: "/dashboard",
     element: <Home />
   },
   {
@@ -77,7 +77,7 @@ export const privateRoutes = [
 
 export const publicRoutes = [
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   }
 ];
