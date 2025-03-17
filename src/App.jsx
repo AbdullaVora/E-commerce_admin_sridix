@@ -9,7 +9,7 @@ function AppContent() {
 
   // Check if the current route is a login page
   // Assuming login is at /login - adjust the path as needed
-  const isLoginPage = location.pathname === "/login";
+  const isLoginPage = location.pathname === "/";
 
   return (
     <>
