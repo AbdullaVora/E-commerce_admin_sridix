@@ -26,7 +26,7 @@ import { Link, useLocation } from "react-router-dom";
 
 
 const menuItems = [
-    { id: 1, icon: <FaHome />, label: "Dashboard", link: "" },
+    { id: 1, icon: <FaHome />, label: "Dashboard", link: "dashboard" },
     {
         id: 2,
         icon: <FaLayerGroup size={16} />,
@@ -126,7 +126,7 @@ const SidebarItem = ({ icon, label, isExpanded, hasDropdown, isOpen, toggleDropd
     const location = useLocation();
 
     // Convert relative links to absolute paths
-    const fullLink = link ? `/${link}` : "/";
+    const fullLink = link ? `/${link}` : "#";
 
     // Check if current item is active
     const isActive = location.pathname === fullLink;
