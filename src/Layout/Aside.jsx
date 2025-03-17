@@ -26,7 +26,7 @@ import { Link, useLocation } from "react-router-dom";
 
 
 const menuItems = [
-    { id: 1, icon: <FaHome />, label: "Dashboard", link: "" },
+    { id: 1, icon: <FaHome />, label: "Dashboard", link: "/" },
     {
         id: 2,
         icon: <FaLayerGroup size={16} />,
